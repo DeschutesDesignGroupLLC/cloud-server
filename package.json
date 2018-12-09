@@ -24,7 +24,8 @@
   },
   "homepage": "https://github.com/DeschutesDesignGroupLLC/parse-server#readme",
   "scripts": {
-    "start": "node htdocs/server.js"
+    "start": "node htdocs/server.js",
+    "stop": "killall node"
   },
   "engines": {
     "node": ">=4.3"
