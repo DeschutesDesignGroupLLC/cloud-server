@@ -5,7 +5,7 @@ var app = express();
 // and the location to your Parse cloud code
 var api = new ParseServer({
     databaseURI: "mongodb://parse-server:Wzk0FiyHL3nN@jsdh@10.0.2.253:27017/parse-server",
-    cloud: "./node_modules/parse-server/lib/cloud-code/Parse.Cloud.js",
+    cloud: "/opt/deschutesdesigngroup/apps/parse/cloud/cloud.js",
     appId: "cfe3e2bf2ea8ecaae29c4ebb522cce42160b5e4f",
     masterKey: "5630adf1afd3fdf6f56c2792307e986856e0ae11",
     fileKey: "6511737841477fcd3e61eabe231cf8a73ae2a4db",
