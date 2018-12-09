@@ -1,11 +1,11 @@
 #!/bin/sh
 
 if [ `id|sed -e s/uid=//g -e s/\(.*//g` -eq 0 ]; then
-    PARSE_START="env VERBOSE=1 HOME=/opt/deschutesdesigngroup/apps/parse NODE_ENV=production /home/ec2-user/n/bin/node /home/ec2-user/n/bin/forever start -l /opt/deschutesdesigngroup/apps/parse/logs/parse.log --append server.js"
-    PARSE_STOP="env VERBOSE=1 HOME=/opt/deschutesdesigngroup/apps/parse NODE_ENV=production/home/ec2-user/n/bin/node /home/ec2-user/n/bin/forever stop -l /opt/deschutesdesigngroup/apps/parse/logs/parse.log --append server.js"
+    PARSE_START="env VERBOSE=1 HOME=/opt/deschutesdesigngroup/apps/parse NODE_ENV=production /usr/bin/node /usr/bin/forever start -l /opt/deschutesdesigngroup/apps/parse/logs/parse.log --append server.js"
+    PARSE_STOP="env VERBOSE=1 HOME=/opt/deschutesdesigngroup/apps/parse NODE_ENV=production /usr/bin/node /usr/bin/forever stop -l /opt/deschutesdesigngroup/apps/parse/logs/parse.log --append server.js"
 else
-    PARSE_START="env VERBOSE=1 /home/ec2-user/n/bin/node /home/ec2-user/n/bin/forever start -l /opt/deschutesdesigngroup/apps/parse/logs/parse.log --append server.js"
-    PARSE_STOP="env VERBOSE=1 /home/ec2-user/n/bin/node /home/ec2-user/n/bin/forever stop -l /opt/deschutesdesigngroup/apps/parse/logs/parse.log --append server.js"
+    PARSE_START="env VERBOSE=1 /usr/bin/node /usr/bin/forever start -l /opt/deschutesdesigngroup/apps/parse/logs/parse.log --append server.js"
+    PARSE_STOP="env VERBOSE=1 /usr/bin/node /usr/bin/forever stop -l /opt/deschutesdesigngroup/apps/parse/logs/parse.log --append server.js"
 fi
 
 PARSE_PROGRAM="/opt/deschutesdesigngroup/apps/parse/htdocs/server.js"
