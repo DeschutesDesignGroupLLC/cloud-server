@@ -1,0 +1,32 @@
+{
+  "name": "dechutesdesigngroupllc-cloud-server",
+  "version": "1.0.0",
+  "description": "Deschutes Design Group LLC parse server deployment",
+  "main": "htdocs/server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeschutesDesignGroupLLC/parse-server.git"
+  },
+  "keywords": [
+    "parse"
+  ],
+  "author": "Deschutes Design Group LLC",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4",
+    "kerberos": "~0.0.x",
+    "parse": "~1.8.0",
+    "parse-server": "*",
+    "parse-dashboard": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/DeschutesDesignGroupLLC/parse-server/issues"
+  },
+  "homepage": "https://github.com/DeschutesDesignGroupLLC/parse-server#readme",
+  "scripts": {
+    "start": "node htdocs/server.js"
+  },
+  "engines": {
+    "node": ">=4.3"
+  }
+}
