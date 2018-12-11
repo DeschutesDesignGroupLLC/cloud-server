@@ -1,0 +1,6 @@
+apps:
+  - script: /opt/deschutesdesigngroup/apps/parse/htdocs/server.js
+    instances: 3
+    exec_mode: cluster
+    watch: true
+    NODE_ENV: production

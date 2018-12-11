@@ -2,4 +2,4 @@
 
 # Starts the parse server
 
-./opt/deschutesdesigngroup/apps/parse/scripts/ctl.sh start
+. /opt/deschutesdesigngroup/apps/parse/scripts/ctl.sh start
