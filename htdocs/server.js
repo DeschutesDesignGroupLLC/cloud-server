@@ -4,12 +4,12 @@ var app = express();
 // Specify the connection string for your mongodb database
 // and the location to your Parse cloud code
 var api = new ParseServer({
-    databaseURI: "mongodb://parse-server:Wzk0FiyHL3nN@jsdh@10.0.2.253:27017/parse-server",
+    databaseURI: "mongodb://parse:Wzk0FiyHL3nN@mongo.deschutesdesigngroup.com:27017/parse-server",
     cloud: "/opt/deschutesdesigngroup/apps/parse/cloud/cloud.js",
     appId: "cfe3e2bf2ea8ecaae29c4ebb522cce42160b5e4f",
     masterKey: "5630adf1afd3fdf6f56c2792307e986856e0ae11",
     fileKey: "6511737841477fcd3e61eabe231cf8a73ae2a4db",
-    serverURL: "http://54.200.185.166:80/parse"
+    serverURL: "https://cloud.deschutesdesigngroup.com/parse"
 });
 // Serve the Parse API on the /parse URL prefix
 app.use('/parse', api);
@@ -29,18 +29,24 @@ var dashboard = new ParseDashboard({
             masterKey: "5630adf1afd3fdf6f56c2792307e986856e0ae11",
             fileKey: "6511737841477fcd3e61eabe231cf8a73ae2a4db",
             production: true,
-            serverURL: "http://54.200.185.166:80/parse"
+            serverURL: "https://cloud.deschutesdesigngroup.com/parse",
+	    iconName: "deschutesdesigngroup.jpg"
         }
     ],
     users: [
         {
-            user: "user",
-            pass: "Wzk0FiyHL3nN"
+            user: "admin",
+            pass: "$2y$12$MQIVdiepPF098NaGF3aM7uz5il7NqEbVqNQa.ZsJzqIRRAslBXnIO"
         }
-    ], useEncryptedPasswords: false
+    ],
+    iconsFolder: "images",
+    useEncryptedPasswords: true,
+    trustProxy: true,
+    cookieSessionSecret: "z0DP7aQ37Wv4gyqXkbtL"
 });
 
-var allowInsecureHTTP = true;
+// Prevent insecure connections
+var allowInsecureHTTP = false;
 
 // Serve the Parse Dashboard on the /parsedashboard URL prefix
 app.use('/', dashboard);

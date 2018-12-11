@@ -1,3 +1,790 @@
+Iconsfolder at path: images not found!
 parse-server running on port 1337
 parse-dashboard running on port 4040
 error: Forever detected script was killed by signal: SIGKILL
+Iconsfolder at path: images not found!
+parse-server running on port 1337
+parse-dashboard running on port 4040
+[36mverbose[39m: REQUEST for [GET] /parse/serverInfo: {} method=GET, url=/parse/serverInfo, host=127.0.0.1:1337, connection=close, content-length=217, accept-encoding=gzip, cf-ipcountry=US, x-forwarded-for=216.228.166.39, cf-ray=4874ed2d9f202a43-SEA, x-forwarded-proto=https, cf-visitor={"scheme":"https"}, accept=*/*, content-type=text/plain, origin=https://cloud.deschutesdesigngroup.com, accept-language=en-us, user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15, referer=https://cloud.deschutesdesigngroup.com/apps, cookie=session=eyJjc3JmU2VjcmV0IjoiR3VfYnBnTE5KOWQ3LVZSQkRBR2VjclR1IiwiZmxhc2giOnt9LCJwYXNzcG9ydCI6eyJ1c2VyIjoiYWRtaW4ifX0=; session.sig=Yv5faSo_Wu_I942NO26GebmlWJs; OPTOUTMULTI=0:0%7Cc2:0%7Cc9:0%7Cc11:0; _ga=GA1.2.298767659.1541541079; _gid=GA1.2.386110085.1544376060; _policy=%7B%22restricted_market%22:true,%22tracking_market%22:%22explicit%22%7D; utag_main=v_id:0166e250cb35003dc583cf8983b801077007f06f00c48$_sn:18$_ss:0$_st:1544486556396$ses_id:1544483604584%3Bexp-session$_pn:16%3Bexp-session; expBannerSplit=B; pwinteraction=Thu,%2008%20Nov%202018%2018:27:33%20GMT; visitor=vid=6b17965f-8dbc-5855-83b6-467fe9a66722; __cfduid=d76ba66e9340c4ba797feab89344189351541395198, cf-connecting-ip=216.228.166.39, 
+[36mverbose[39m: RESPONSE from [GET] /parse/serverInfo: {
+  "response": {
+    "features": {
+      "globalConfig": {
+        "create": true,
+        "read": true,
+        "update": true,
+        "delete": true
+      },
+      "hooks": {
+        "create": true,
+        "read": true,
+        "update": true,
+        "delete": true
+      },
+      "cloudCode": {
+        "jobs": true
+      },
+      "logs": {
+        "level": true,
+        "size": true,
+        "order": true,
+        "until": true,
+        "from": true
+      },
+      "push": {
+        "immediatePush": false,
+        "scheduledPush": false,
+        "storedPushData": false,
+        "pushAudiences": true,
+        "localization": true
+      },
+      "schemas": {
+        "addField": true,
+        "removeField": true,
+        "addClass": true,
+        "removeClass": true,
+        "clearAllDataFromClass": true,
+        "exportClass": false,
+        "editClassLevelPermissions": true,
+        "editPointerPermissions": true
+      }
+    },
+    "parseServerVersion": "3.1.2"
+  }
+} create=true, read=true, update=true, delete=true, create=true, read=true, update=true, delete=true, jobs=true, level=true, size=true, order=true, until=true, from=true, immediatePush=false, scheduledPush=false, storedPushData=false, pushAudiences=true, localization=true, addField=true, removeField=true, addClass=true, removeClass=true, clearAllDataFromClass=true, exportClass=false, editClassLevelPermissions=true, editPointerPermissions=true, parseServerVersion=3.1.2
+[36mverbose[39m: REQUEST for [GET] /parse/classes/_User: {
+  "where": {},
+  "limit": 0,
+  "count": 1
+} method=GET, url=/parse/classes/_User, host=127.0.0.1:1337, connection=close, content-length=248, accept-encoding=gzip, cf-ipcountry=US, x-forwarded-for=216.228.166.39, cf-ray=4874ed2e3f6d2a43-SEA, x-forwarded-proto=https, cf-visitor={"scheme":"https"}, accept=*/*, content-type=text/plain, origin=https://cloud.deschutesdesigngroup.com, accept-language=en-us, user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15, referer=https://cloud.deschutesdesigngroup.com/apps, cookie=session=eyJjc3JmU2VjcmV0IjoiR3VfYnBnTE5KOWQ3LVZSQkRBR2VjclR1IiwiZmxhc2giOnt9LCJwYXNzcG9ydCI6eyJ1c2VyIjoiYWRtaW4ifX0=; session.sig=Yv5faSo_Wu_I942NO26GebmlWJs; OPTOUTMULTI=0:0%7Cc2:0%7Cc9:0%7Cc11:0; _ga=GA1.2.298767659.1541541079; _gid=GA1.2.386110085.1544376060; _policy=%7B%22restricted_market%22:true,%22tracking_market%22:%22explicit%22%7D; utag_main=v_id:0166e250cb35003dc583cf8983b801077007f06f00c48$_sn:18$_ss:0$_st:1544486556396$ses_id:1544483604584%3Bexp-session$_pn:16%3Bexp-session; expBannerSplit=B; pwinteraction=Thu,%2008%20Nov%202018%2018:27:33%20GMT; visitor=vid=6b17965f-8dbc-5855-83b6-467fe9a66722; __cfduid=d76ba66e9340c4ba797feab89344189351541395198, cf-connecting-ip=216.228.166.39, , limit=0, count=1
+[36mverbose[39m: RESPONSE from [GET] /parse/classes/_User: {
+  "response": {
+    "results": [],
+    "count": 0
+  }
+} results=[], count=0
+[36mverbose[39m: REQUEST for [GET] /parse/classes/_Installation: {
+  "where": {},
+  "limit": 0,
+  "count": 1
+} method=GET, url=/parse/classes/_Installation, host=127.0.0.1:1337, connection=close, content-length=248, accept-encoding=gzip, cf-ipcountry=US, x-forwarded-for=216.228.166.39, cf-ray=4874ed2e3f6c2a43-SEA, x-forwarded-proto=https, cf-visitor={"scheme":"https"}, accept=*/*, content-type=text/plain, origin=https://cloud.deschutesdesigngroup.com, accept-language=en-us, user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15, referer=https://cloud.deschutesdesigngroup.com/apps, cookie=session=eyJjc3JmU2VjcmV0IjoiR3VfYnBnTE5KOWQ3LVZSQkRBR2VjclR1IiwiZmxhc2giOnt9LCJwYXNzcG9ydCI6eyJ1c2VyIjoiYWRtaW4ifX0=; session.sig=Yv5faSo_Wu_I942NO26GebmlWJs; OPTOUTMULTI=0:0%7Cc2:0%7Cc9:0%7Cc11:0; _ga=GA1.2.298767659.1541541079; _gid=GA1.2.386110085.1544376060; _policy=%7B%22restricted_market%22:true,%22tracking_market%22:%22explicit%22%7D; utag_main=v_id:0166e250cb35003dc583cf8983b801077007f06f00c48$_sn:18$_ss:0$_st:1544486556396$ses_id:1544483604584%3Bexp-session$_pn:16%3Bexp-session; expBannerSplit=B; pwinteraction=Thu,%2008%20Nov%202018%2018:27:33%20GMT; visitor=vid=6b17965f-8dbc-5855-83b6-467fe9a66722; __cfduid=d76ba66e9340c4ba797feab89344189351541395198, cf-connecting-ip=216.228.166.39, , limit=0, count=1
+[36mverbose[39m: RESPONSE from [GET] /parse/classes/_Installation: {
+  "response": {
+    "results": [],
+    "count": 0
+  }
+} results=[], count=0
+[36mverbose[39m: REQUEST for [GET] /parse/schemas: {} method=GET, url=/parse/schemas, host=127.0.0.1:1337, connection=close, content-length=217, accept-encoding=gzip, cf-ipcountry=US, x-forwarded-for=216.228.166.39, cf-ray=4874ed33dac92a43-SEA, x-forwarded-proto=https, cf-visitor={"scheme":"https"}, accept=*/*, content-type=text/plain, origin=https://cloud.deschutesdesigngroup.com, accept-language=en-us, user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15, referer=https://cloud.deschutesdesigngroup.com/apps/PERSCOM%20Cloud%20Integration/browser, cookie=session=eyJjc3JmU2VjcmV0IjoiR3VfYnBnTE5KOWQ3LVZSQkRBR2VjclR1IiwiZmxhc2giOnt9LCJwYXNzcG9ydCI6eyJ1c2VyIjoiYWRtaW4ifX0=; session.sig=Yv5faSo_Wu_I942NO26GebmlWJs; OPTOUTMULTI=0:0%7Cc2:0%7Cc9:0%7Cc11:0; _ga=GA1.2.298767659.1541541079; _gid=GA1.2.386110085.1544376060; _policy=%7B%22restricted_market%22:true,%22tracking_market%22:%22explicit%22%7D; utag_main=v_id:0166e250cb35003dc583cf8983b801077007f06f00c48$_sn:18$_ss:0$_st:1544486556396$ses_id:1544483604584%3Bexp-session$_pn:16%3Bexp-session; expBannerSplit=B; pwinteraction=Thu,%2008%20Nov%202018%2018:27:33%20GMT; visitor=vid=6b17965f-8dbc-5855-83b6-467fe9a66722; __cfduid=d76ba66e9340c4ba797feab89344189351541395198, cf-connecting-ip=216.228.166.39, 
+[36mverbose[39m: RESPONSE from [GET] /parse/schemas: {
+  "response": {
+    "results": [
+      {
+        "className": "_Role",
+        "fields": {
+          "objectId": {
+            "type": "String"
+          },
+          "createdAt": {
+            "type": "Date"
+          },
+          "updatedAt": {
+            "type": "Date"
+          },
+          "ACL": {
+            "type": "ACL"
+          },
+          "name": {
+            "type": "String"
+          },
+          "users": {
+            "type": "Relation",
+            "targetClass": "_User"
+          },
+          "roles": {
+            "type": "Relation",
+            "targetClass": "_Role"
+          }
+        },
+        "classLevelPermissions": {
+          "find": {
+            "*": true
+          },
+          "get": {
+            "*": true
+          },
+          "create": {
+            "*": true
+          },
+          "update": {
+            "*": true
+          },
+          "delete": {
+            "*": true
+          },
+          "addField": {
+            "*": true
+          }
+        },
+        "indexes": {
+          "_id_": {
+            "_id": 1
+          },
+          "name_1": {
+            "name": 1
+          }
+        }
+      },
+      {
+        "className": "_User",
+        "fields": {
+          "objectId": {
+            "type": "String"
+          },
+          "createdAt": {
+            "type": "Date"
+          },
+          "updatedAt": {
+            "type": "Date"
+          },
+          "ACL": {
+            "type": "ACL"
+          },
+          "username": {
+            "type": "String"
+          },
+          "password": {
+            "type": "String"
+          },
+          "email": {
+            "type": "String"
+          },
+          "emailVerified": {
+            "type": "Boolean"
+          },
+          "authData": {
+            "type": "Object"
+          }
+        },
+        "classLevelPermissions": {
+          "find": {
+            "*": true
+          },
+          "get": {
+            "*": true
+          },
+          "create": {
+            "*": true
+          },
+          "update": {
+            "*": true
+          },
+          "delete": {
+            "*": true
+          },
+          "addField": {
+            "*": true
+          }
+        },
+        "indexes": {
+          "_id_": {
+            "_id": 1
+          },
+          "username_1": {
+            "username": 1
+          },
+          "email_1": {
+            "email": 1
+          }
+        }
+      }
+    ]
+  }
+} results=[className=_Role, type=String, type=Date, type=Date, type=ACL, type=String, type=Relation, targetClass=_User, type=Relation, targetClass=_Role, *=true, *=true, *=true, *=true, *=true, *=true, _id=1, name=1, className=_User, type=String, type=Date, type=Date, type=ACL, type=String, type=String, type=String, type=Boolean, type=Object, $ref=$["result"]["response"]["results"][0]["classLevelPermissions"], _id=1, username=1, email=1]
+[36mverbose[39m: REQUEST for [GET] /parse/classes/_Role: {
+  "where": {},
+  "limit": 200,
+  "order": "-createdAt"
+} method=GET, url=/parse/classes/_Role, host=127.0.0.1:1337, connection=close, content-length=261, accept-encoding=gzip, cf-ipcountry=US, x-forwarded-for=216.228.166.39, cf-ray=4874ed34ab2e2a43-SEA, x-forwarded-proto=https, cf-visitor={"scheme":"https"}, accept=*/*, content-type=text/plain, origin=https://cloud.deschutesdesigngroup.com, accept-language=en-us, user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15, referer=https://cloud.deschutesdesigngroup.com/apps/PERSCOM%20Cloud%20Integration/browser/_Role, cookie=session=eyJjc3JmU2VjcmV0IjoiR3VfYnBnTE5KOWQ3LVZSQkRBR2VjclR1IiwiZmxhc2giOnt9LCJwYXNzcG9ydCI6eyJ1c2VyIjoiYWRtaW4ifX0=; session.sig=Yv5faSo_Wu_I942NO26GebmlWJs; OPTOUTMULTI=0:0%7Cc2:0%7Cc9:0%7Cc11:0; _ga=GA1.2.298767659.1541541079; _gid=GA1.2.386110085.1544376060; _policy=%7B%22restricted_market%22:true,%22tracking_market%22:%22explicit%22%7D; utag_main=v_id:0166e250cb35003dc583cf8983b801077007f06f00c48$_sn:18$_ss:0$_st:1544486556396$ses_id:1544483604584%3Bexp-session$_pn:16%3Bexp-session; expBannerSplit=B; pwinteraction=Thu,%2008%20Nov%202018%2018:27:33%20GMT; visitor=vid=6b17965f-8dbc-5855-83b6-467fe9a66722; __cfduid=d76ba66e9340c4ba797feab89344189351541395198, cf-connecting-ip=216.228.166.39, , limit=200, order=-createdAt
+[36mverbose[39m: RESPONSE from [GET] /parse/classes/_Role: {
+  "response": {
+    "results": []
+  }
+} results=[]
+[36mverbose[39m: REQUEST for [GET] /parse/classes/_Role: {
+  "where": {},
+  "limit": 0,
+  "count": 1
+} method=GET, url=/parse/classes/_Role, host=127.0.0.1:1337, connection=close, content-length=248, accept-encoding=gzip, cf-ipcountry=US, x-forwarded-for=216.228.166.39, cf-ray=4874ed34ab2c2a43-SEA, x-forwarded-proto=https, cf-visitor={"scheme":"https"}, accept=*/*, content-type=text/plain, origin=https://cloud.deschutesdesigngroup.com, accept-language=en-us, user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15, referer=https://cloud.deschutesdesigngroup.com/apps/PERSCOM%20Cloud%20Integration/browser/_Role, cookie=session=eyJjc3JmU2VjcmV0IjoiR3VfYnBnTE5KOWQ3LVZSQkRBR2VjclR1IiwiZmxhc2giOnt9LCJwYXNzcG9ydCI6eyJ1c2VyIjoiYWRtaW4ifX0=; session.sig=Yv5faSo_Wu_I942NO26GebmlWJs; OPTOUTMULTI=0:0%7Cc2:0%7Cc9:0%7Cc11:0; _ga=GA1.2.298767659.1541541079; _gid=GA1.2.386110085.1544376060; _policy=%7B%22restricted_market%22:true,%22tracking_market%22:%22explicit%22%7D; utag_main=v_id:0166e250cb35003dc583cf8983b801077007f06f00c48$_sn:18$_ss:0$_st:1544486556396$ses_id:1544483604584%3Bexp-session$_pn:16%3Bexp-session; expBannerSplit=B; pwinteraction=Thu,%2008%20Nov%202018%2018:27:33%20GMT; visitor=vid=6b17965f-8dbc-5855-83b6-467fe9a66722; __cfduid=d76ba66e9340c4ba797feab89344189351541395198, cf-connecting-ip=216.228.166.39, , limit=0, count=1
+[36mverbose[39m: RESPONSE from [GET] /parse/classes/_Role: {
+  "response": {
+    "results": [],
+    "count": 0
+  }
+} results=[], count=0
+[36mverbose[39m: REQUEST for [GET] /parse/classes/_Role: {
+  "where": {},
+  "limit": 0,
+  "count": 1
+} method=GET, url=/parse/classes/_Role, host=127.0.0.1:1337, connection=close, content-length=248, accept-encoding=gzip, cf-ipcountry=US, x-forwarded-for=216.228.166.39, cf-ray=4874ed34ab2f2a43-SEA, x-forwarded-proto=https, cf-visitor={"scheme":"https"}, accept=*/*, content-type=text/plain, origin=https://cloud.deschutesdesigngroup.com, accept-language=en-us, user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15, referer=https://cloud.deschutesdesigngroup.com/apps/PERSCOM%20Cloud%20Integration/browser/_Role, cookie=session=eyJjc3JmU2VjcmV0IjoiR3VfYnBnTE5KOWQ3LVZSQkRBR2VjclR1IiwiZmxhc2giOnt9LCJwYXNzcG9ydCI6eyJ1c2VyIjoiYWRtaW4ifX0=; session.sig=Yv5faSo_Wu_I942NO26GebmlWJs; OPTOUTMULTI=0:0%7Cc2:0%7Cc9:0%7Cc11:0; _ga=GA1.2.298767659.1541541079; _gid=GA1.2.386110085.1544376060; _policy=%7B%22restricted_market%22:true,%22tracking_market%22:%22explicit%22%7D; utag_main=v_id:0166e250cb35003dc583cf8983b801077007f06f00c48$_sn:18$_ss:0$_st:1544486556396$ses_id:1544483604584%3Bexp-session$_pn:16%3Bexp-session; expBannerSplit=B; pwinteraction=Thu,%2008%20Nov%202018%2018:27:33%20GMT; visitor=vid=6b17965f-8dbc-5855-83b6-467fe9a66722; __cfduid=d76ba66e9340c4ba797feab89344189351541395198, cf-connecting-ip=216.228.166.39, , limit=0, count=1
+[36mverbose[39m: RESPONSE from [GET] /parse/classes/_Role: {
+  "response": {
+    "results": [],
+    "count": 0
+  }
+} results=[], count=0
+[36mverbose[39m: REQUEST for [GET] /parse/classes/_User: {
+  "where": {},
+  "limit": 200,
+  "order": "-createdAt"
+} method=GET, url=/parse/classes/_User, host=127.0.0.1:1337, connection=close, content-length=261, accept-encoding=gzip, cf-ipcountry=US, x-forwarded-for=216.228.166.39, cf-ray=4874ed618dff2a43-SEA, x-forwarded-proto=https, cf-visitor={"scheme":"https"}, accept=*/*, content-type=text/plain, origin=https://cloud.deschutesdesigngroup.com, accept-language=en-us, user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15, referer=https://cloud.deschutesdesigngroup.com/apps/PERSCOM%20Cloud%20Integration/browser/_User, cookie=session=eyJjc3JmU2VjcmV0IjoiR3VfYnBnTE5KOWQ3LVZSQkRBR2VjclR1IiwiZmxhc2giOnt9LCJwYXNzcG9ydCI6eyJ1c2VyIjoiYWRtaW4ifX0=; session.sig=Yv5faSo_Wu_I942NO26GebmlWJs; OPTOUTMULTI=0:0%7Cc2:0%7Cc9:0%7Cc11:0; _ga=GA1.2.298767659.1541541079; _gid=GA1.2.386110085.1544376060; _policy=%7B%22restricted_market%22:true,%22tracking_market%22:%22explicit%22%7D; utag_main=v_id:0166e250cb35003dc583cf8983b801077007f06f00c48$_sn:18$_ss:0$_st:1544486556396$ses_id:1544483604584%3Bexp-session$_pn:16%3Bexp-session; expBannerSplit=B; pwinteraction=Thu,%2008%20Nov%202018%2018:27:33%20GMT; visitor=vid=6b17965f-8dbc-5855-83b6-467fe9a66722; __cfduid=d76ba66e9340c4ba797feab89344189351541395198, cf-connecting-ip=216.228.166.39, , limit=200, order=-createdAt
+[36mverbose[39m: RESPONSE from [GET] /parse/classes/_User: {
+  "response": {
+    "results": []
+  }
+} results=[]
+[36mverbose[39m: REQUEST for [GET] /parse/classes/_Role: {
+  "where": {},
+  "limit": 200,
+  "order": "-createdAt"
+} method=GET, url=/parse/classes/_Role, host=127.0.0.1:1337, connection=close, content-length=261, accept-encoding=gzip, cf-ipcountry=US, x-forwarded-for=216.228.166.39, cf-ray=4874ed65b88d2a43-SEA, x-forwarded-proto=https, cf-visitor={"scheme":"https"}, accept=*/*, content-type=text/plain, origin=https://cloud.deschutesdesigngroup.com, accept-language=en-us, user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15, referer=https://cloud.deschutesdesigngroup.com/apps/PERSCOM%20Cloud%20Integration/browser/_Role, cookie=session=eyJjc3JmU2VjcmV0IjoiR3VfYnBnTE5KOWQ3LVZSQkRBR2VjclR1IiwiZmxhc2giOnt9LCJwYXNzcG9ydCI6eyJ1c2VyIjoiYWRtaW4ifX0=; session.sig=Yv5faSo_Wu_I942NO26GebmlWJs; OPTOUTMULTI=0:0%7Cc2:0%7Cc9:0%7Cc11:0; _ga=GA1.2.298767659.1541541079; _gid=GA1.2.386110085.1544376060; _policy=%7B%22restricted_market%22:true,%22tracking_market%22:%22explicit%22%7D; utag_main=v_id:0166e250cb35003dc583cf8983b801077007f06f00c48$_sn:18$_ss:0$_st:1544486556396$ses_id:1544483604584%3Bexp-session$_pn:16%3Bexp-session; expBannerSplit=B; pwinteraction=Thu,%2008%20Nov%202018%2018:27:33%20GMT; visitor=vid=6b17965f-8dbc-5855-83b6-467fe9a66722; __cfduid=d76ba66e9340c4ba797feab89344189351541395198, cf-connecting-ip=216.228.166.39, , limit=200, order=-createdAt
+[36mverbose[39m: RESPONSE from [GET] /parse/classes/_Role: {
+  "response": {
+    "results": []
+  }
+} results=[]
+error: Forever detected script was killed by signal: SIGKILL
+parse-server running on port 1337
+parse-dashboard running on port 4040
+[36mverbose[39m: REQUEST for [GET] /parse/serverInfo: {} method=GET, url=/parse/serverInfo, host=127.0.0.1:1337, connection=close, content-length=217, accept-encoding=gzip, cf-ipcountry=US, x-forwarded-for=216.228.166.39, cf-ray=4874f958ffa32a49-SEA, x-forwarded-proto=https, cf-visitor={"scheme":"https"}, accept=*/*, content-type=text/plain, origin=https://cloud.deschutesdesigngroup.com, accept-language=en-us, user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15, referer=https://cloud.deschutesdesigngroup.com/apps, cookie=session=eyJjc3JmU2VjcmV0IjoiU0tTbkJzTHhoZ29xZmZzWkJNUWo0dE80IiwiZmxhc2giOnt9LCJwYXNzcG9ydCI6eyJ1c2VyIjoiYWRtaW4ifX0=; session.sig=rGVZK8pIQv2TMN7RnBArDsP6tsg; OPTOUTMULTI=0:0%7Cc2:0%7Cc9:0%7Cc11:0; _ga=GA1.2.298767659.1541541079; _gid=GA1.2.386110085.1544376060; _policy=%7B%22restricted_market%22:true,%22tracking_market%22:%22explicit%22%7D; utag_main=v_id:0166e250cb35003dc583cf8983b801077007f06f00c48$_sn:18$_ss:0$_st:1544486556396$ses_id:1544483604584%3Bexp-session$_pn:16%3Bexp-session; expBannerSplit=B; pwinteraction=Thu,%2008%20Nov%202018%2018:27:33%20GMT; visitor=vid=6b17965f-8dbc-5855-83b6-467fe9a66722; __cfduid=d76ba66e9340c4ba797feab89344189351541395198, cf-connecting-ip=216.228.166.39, 
+[36mverbose[39m: RESPONSE from [GET] /parse/serverInfo: {
+  "response": {
+    "features": {
+      "globalConfig": {
+        "create": true,
+        "read": true,
+        "update": true,
+        "delete": true
+      },
+      "hooks": {
+        "create": true,
+        "read": true,
+        "update": true,
+        "delete": true
+      },
+      "cloudCode": {
+        "jobs": true
+      },
+      "logs": {
+        "level": true,
+        "size": true,
+        "order": true,
+        "until": true,
+        "from": true
+      },
+      "push": {
+        "immediatePush": false,
+        "scheduledPush": false,
+        "storedPushData": false,
+        "pushAudiences": true,
+        "localization": true
+      },
+      "schemas": {
+        "addField": true,
+        "removeField": true,
+        "addClass": true,
+        "removeClass": true,
+        "clearAllDataFromClass": true,
+        "exportClass": false,
+        "editClassLevelPermissions": true,
+        "editPointerPermissions": true
+      }
+    },
+    "parseServerVersion": "3.1.2"
+  }
+} create=true, read=true, update=true, delete=true, create=true, read=true, update=true, delete=true, jobs=true, level=true, size=true, order=true, until=true, from=true, immediatePush=false, scheduledPush=false, storedPushData=false, pushAudiences=true, localization=true, addField=true, removeField=true, addClass=true, removeClass=true, clearAllDataFromClass=true, exportClass=false, editClassLevelPermissions=true, editPointerPermissions=true, parseServerVersion=3.1.2
+[36mverbose[39m: REQUEST for [GET] /parse/classes/_User: {
+  "where": {},
+  "limit": 0,
+  "count": 1
+} method=GET, url=/parse/classes/_User, host=127.0.0.1:1337, connection=close, content-length=248, accept-encoding=gzip, cf-ipcountry=US, x-forwarded-for=216.228.166.39, cf-ray=4874f95978082a49-SEA, x-forwarded-proto=https, cf-visitor={"scheme":"https"}, accept=*/*, content-type=text/plain, origin=https://cloud.deschutesdesigngroup.com, accept-language=en-us, user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15, referer=https://cloud.deschutesdesigngroup.com/apps, cookie=session=eyJjc3JmU2VjcmV0IjoiU0tTbkJzTHhoZ29xZmZzWkJNUWo0dE80IiwiZmxhc2giOnt9LCJwYXNzcG9ydCI6eyJ1c2VyIjoiYWRtaW4ifX0=; session.sig=rGVZK8pIQv2TMN7RnBArDsP6tsg; OPTOUTMULTI=0:0%7Cc2:0%7Cc9:0%7Cc11:0; _ga=GA1.2.298767659.1541541079; _gid=GA1.2.386110085.1544376060; _policy=%7B%22restricted_market%22:true,%22tracking_market%22:%22explicit%22%7D; utag_main=v_id:0166e250cb35003dc583cf8983b801077007f06f00c48$_sn:18$_ss:0$_st:1544486556396$ses_id:1544483604584%3Bexp-session$_pn:16%3Bexp-session; expBannerSplit=B; pwinteraction=Thu,%2008%20Nov%202018%2018:27:33%20GMT; visitor=vid=6b17965f-8dbc-5855-83b6-467fe9a66722; __cfduid=d76ba66e9340c4ba797feab89344189351541395198, cf-connecting-ip=216.228.166.39, , limit=0, count=1
+[36mverbose[39m: REQUEST for [GET] /parse/classes/_Installation: {
+  "where": {},
+  "limit": 0,
+  "count": 1
+} method=GET, url=/parse/classes/_Installation, host=127.0.0.1:1337, connection=close, content-length=248, accept-encoding=gzip, cf-ipcountry=US, x-forwarded-for=216.228.166.39, cf-ray=4874f95978072a49-SEA, x-forwarded-proto=https, cf-visitor={"scheme":"https"}, accept=*/*, content-type=text/plain, origin=https://cloud.deschutesdesigngroup.com, accept-language=en-us, user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15, referer=https://cloud.deschutesdesigngroup.com/apps, cookie=session=eyJjc3JmU2VjcmV0IjoiU0tTbkJzTHhoZ29xZmZzWkJNUWo0dE80IiwiZmxhc2giOnt9LCJwYXNzcG9ydCI6eyJ1c2VyIjoiYWRtaW4ifX0=; session.sig=rGVZK8pIQv2TMN7RnBArDsP6tsg; OPTOUTMULTI=0:0%7Cc2:0%7Cc9:0%7Cc11:0; _ga=GA1.2.298767659.1541541079; _gid=GA1.2.386110085.1544376060; _policy=%7B%22restricted_market%22:true,%22tracking_market%22:%22explicit%22%7D; utag_main=v_id:0166e250cb35003dc583cf8983b801077007f06f00c48$_sn:18$_ss:0$_st:1544486556396$ses_id:1544483604584%3Bexp-session$_pn:16%3Bexp-session; expBannerSplit=B; pwinteraction=Thu,%2008%20Nov%202018%2018:27:33%20GMT; visitor=vid=6b17965f-8dbc-5855-83b6-467fe9a66722; __cfduid=d76ba66e9340c4ba797feab89344189351541395198, cf-connecting-ip=216.228.166.39, , limit=0, count=1
+[36mverbose[39m: RESPONSE from [GET] /parse/classes/_User: {
+  "response": {
+    "results": [],
+    "count": 0
+  }
+} results=[], count=0
+[36mverbose[39m: RESPONSE from [GET] /parse/classes/_Installation: {
+  "response": {
+    "results": [],
+    "count": 0
+  }
+} results=[], count=0
+[36mverbose[39m: REQUEST for [GET] /parse/schemas: {} method=GET, url=/parse/schemas, host=127.0.0.1:1337, connection=close, content-length=217, accept-encoding=gzip, cf-ipcountry=US, x-forwarded-for=216.228.166.39, cf-ray=4874f97afead2a49-SEA, x-forwarded-proto=https, cf-visitor={"scheme":"https"}, accept=*/*, content-type=text/plain, origin=https://cloud.deschutesdesigngroup.com, accept-language=en-us, user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15, referer=https://cloud.deschutesdesigngroup.com/apps/PERSCOM%20Cloud%20Integration/browser, cookie=session=eyJjc3JmU2VjcmV0IjoiU0tTbkJzTHhoZ29xZmZzWkJNUWo0dE80IiwiZmxhc2giOnt9LCJwYXNzcG9ydCI6eyJ1c2VyIjoiYWRtaW4ifX0=; session.sig=rGVZK8pIQv2TMN7RnBArDsP6tsg; OPTOUTMULTI=0:0%7Cc2:0%7Cc9:0%7Cc11:0; _ga=GA1.2.298767659.1541541079; _gid=GA1.2.386110085.1544376060; _policy=%7B%22restricted_market%22:true,%22tracking_market%22:%22explicit%22%7D; utag_main=v_id:0166e250cb35003dc583cf8983b801077007f06f00c48$_sn:18$_ss:0$_st:1544486556396$ses_id:1544483604584%3Bexp-session$_pn:16%3Bexp-session; expBannerSplit=B; pwinteraction=Thu,%2008%20Nov%202018%2018:27:33%20GMT; visitor=vid=6b17965f-8dbc-5855-83b6-467fe9a66722; __cfduid=d76ba66e9340c4ba797feab89344189351541395198, cf-connecting-ip=216.228.166.39, 
+[36mverbose[39m: RESPONSE from [GET] /parse/schemas: {
+  "response": {
+    "results": [
+      {
+        "className": "_Role",
+        "fields": {
+          "objectId": {
+            "type": "String"
+          },
+          "createdAt": {
+            "type": "Date"
+          },
+          "updatedAt": {
+            "type": "Date"
+          },
+          "ACL": {
+            "type": "ACL"
+          },
+          "name": {
+            "type": "String"
+          },
+          "users": {
+            "type": "Relation",
+            "targetClass": "_User"
+          },
+          "roles": {
+            "type": "Relation",
+            "targetClass": "_Role"
+          }
+        },
+        "classLevelPermissions": {
+          "find": {
+            "*": true
+          },
+          "get": {
+            "*": true
+          },
+          "create": {
+            "*": true
+          },
+          "update": {
+            "*": true
+          },
+          "delete": {
+            "*": true
+          },
+          "addField": {
+            "*": true
+          }
+        },
+        "indexes": {
+          "_id_": {
+            "_id": 1
+          },
+          "name_1": {
+            "name": 1
+          }
+        }
+      },
+      {
+        "className": "_User",
+        "fields": {
+          "objectId": {
+            "type": "String"
+          },
+          "createdAt": {
+            "type": "Date"
+          },
+          "updatedAt": {
+            "type": "Date"
+          },
+          "ACL": {
+            "type": "ACL"
+          },
+          "username": {
+            "type": "String"
+          },
+          "password": {
+            "type": "String"
+          },
+          "email": {
+            "type": "String"
+          },
+          "emailVerified": {
+            "type": "Boolean"
+          },
+          "authData": {
+            "type": "Object"
+          }
+        },
+        "classLevelPermissions": {
+          "find": {
+            "*": true
+          },
+          "get": {
+            "*": true
+          },
+          "create": {
+            "*": true
+          },
+          "update": {
+            "*": true
+          },
+          "delete": {
+            "*": true
+          },
+          "addField": {
+            "*": true
+          }
+        },
+        "indexes": {
+          "_id_": {
+            "_id": 1
+          },
+          "username_1": {
+            "username": 1
+          },
+          "email_1": {
+            "email": 1
+          }
+        }
+      }
+    ]
+  }
+} results=[className=_Role, type=String, type=Date, type=Date, type=ACL, type=String, type=Relation, targetClass=_User, type=Relation, targetClass=_Role, *=true, *=true, *=true, *=true, *=true, *=true, _id=1, name=1, className=_User, type=String, type=Date, type=Date, type=ACL, type=String, type=String, type=String, type=Boolean, type=Object, $ref=$["result"]["response"]["results"][0]["classLevelPermissions"], _id=1, username=1, email=1]
+[36mverbose[39m: REQUEST for [GET] /parse/classes/_Role: {
+  "where": {},
+  "limit": 0,
+  "count": 1
+} method=GET, url=/parse/classes/_Role, host=127.0.0.1:1337, connection=close, content-length=248, accept-encoding=gzip, cf-ipcountry=US, x-forwarded-for=216.228.166.39, cf-ray=4874f97b7ef82a49-SEA, x-forwarded-proto=https, cf-visitor={"scheme":"https"}, accept=*/*, content-type=text/plain, origin=https://cloud.deschutesdesigngroup.com, accept-language=en-us, user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15, referer=https://cloud.deschutesdesigngroup.com/apps/PERSCOM%20Cloud%20Integration/browser/_Role, cookie=session=eyJjc3JmU2VjcmV0IjoiU0tTbkJzTHhoZ29xZmZzWkJNUWo0dE80IiwiZmxhc2giOnt9LCJwYXNzcG9ydCI6eyJ1c2VyIjoiYWRtaW4ifX0=; session.sig=rGVZK8pIQv2TMN7RnBArDsP6tsg; OPTOUTMULTI=0:0%7Cc2:0%7Cc9:0%7Cc11:0; _ga=GA1.2.298767659.1541541079; _gid=GA1.2.386110085.1544376060; _policy=%7B%22restricted_market%22:true,%22tracking_market%22:%22explicit%22%7D; utag_main=v_id:0166e250cb35003dc583cf8983b801077007f06f00c48$_sn:18$_ss:0$_st:1544486556396$ses_id:1544483604584%3Bexp-session$_pn:16%3Bexp-session; expBannerSplit=B; pwinteraction=Thu,%2008%20Nov%202018%2018:27:33%20GMT; visitor=vid=6b17965f-8dbc-5855-83b6-467fe9a66722; __cfduid=d76ba66e9340c4ba797feab89344189351541395198, cf-connecting-ip=216.228.166.39, , limit=0, count=1
+[36mverbose[39m: REQUEST for [GET] /parse/classes/_Role: {
+  "where": {},
+  "limit": 0,
+  "count": 1
+} method=GET, url=/parse/classes/_Role, host=127.0.0.1:1337, connection=close, content-length=248, accept-encoding=gzip, cf-ipcountry=US, x-forwarded-for=216.228.166.39, cf-ray=4874f97b7efa2a49-SEA, x-forwarded-proto=https, cf-visitor={"scheme":"https"}, accept=*/*, content-type=text/plain, origin=https://cloud.deschutesdesigngroup.com, accept-language=en-us, user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15, referer=https://cloud.deschutesdesigngroup.com/apps/PERSCOM%20Cloud%20Integration/browser/_Role, cookie=session=eyJjc3JmU2VjcmV0IjoiU0tTbkJzTHhoZ29xZmZzWkJNUWo0dE80IiwiZmxhc2giOnt9LCJwYXNzcG9ydCI6eyJ1c2VyIjoiYWRtaW4ifX0=; session.sig=rGVZK8pIQv2TMN7RnBArDsP6tsg; OPTOUTMULTI=0:0%7Cc2:0%7Cc9:0%7Cc11:0; _ga=GA1.2.298767659.1541541079; _gid=GA1.2.386110085.1544376060; _policy=%7B%22restricted_market%22:true,%22tracking_market%22:%22explicit%22%7D; utag_main=v_id:0166e250cb35003dc583cf8983b801077007f06f00c48$_sn:18$_ss:0$_st:1544486556396$ses_id:1544483604584%3Bexp-session$_pn:16%3Bexp-session; expBannerSplit=B; pwinteraction=Thu,%2008%20Nov%202018%2018:27:33%20GMT; visitor=vid=6b17965f-8dbc-5855-83b6-467fe9a66722; __cfduid=d76ba66e9340c4ba797feab89344189351541395198, cf-connecting-ip=216.228.166.39, , limit=0, count=1
+[36mverbose[39m: RESPONSE from [GET] /parse/classes/_Role: {
+  "response": {
+    "results": [],
+    "count": 0
+  }
+} results=[], count=0
+[36mverbose[39m: REQUEST for [GET] /parse/classes/_Role: {
+  "where": {},
+  "limit": 200,
+  "order": "-createdAt"
+} method=GET, url=/parse/classes/_Role, host=127.0.0.1:1337, connection=close, content-length=261, accept-encoding=gzip, cf-ipcountry=US, x-forwarded-for=216.228.166.39, cf-ray=4874f97b7ef92a49-SEA, x-forwarded-proto=https, cf-visitor={"scheme":"https"}, accept=*/*, content-type=text/plain, origin=https://cloud.deschutesdesigngroup.com, accept-language=en-us, user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15, referer=https://cloud.deschutesdesigngroup.com/apps/PERSCOM%20Cloud%20Integration/browser/_Role, cookie=session=eyJjc3JmU2VjcmV0IjoiU0tTbkJzTHhoZ29xZmZzWkJNUWo0dE80IiwiZmxhc2giOnt9LCJwYXNzcG9ydCI6eyJ1c2VyIjoiYWRtaW4ifX0=; session.sig=rGVZK8pIQv2TMN7RnBArDsP6tsg; OPTOUTMULTI=0:0%7Cc2:0%7Cc9:0%7Cc11:0; _ga=GA1.2.298767659.1541541079; _gid=GA1.2.386110085.1544376060; _policy=%7B%22restricted_market%22:true,%22tracking_market%22:%22explicit%22%7D; utag_main=v_id:0166e250cb35003dc583cf8983b801077007f06f00c48$_sn:18$_ss:0$_st:1544486556396$ses_id:1544483604584%3Bexp-session$_pn:16%3Bexp-session; expBannerSplit=B; pwinteraction=Thu,%2008%20Nov%202018%2018:27:33%20GMT; visitor=vid=6b17965f-8dbc-5855-83b6-467fe9a66722; __cfduid=d76ba66e9340c4ba797feab89344189351541395198, cf-connecting-ip=216.228.166.39, , limit=200, order=-createdAt
+[36mverbose[39m: RESPONSE from [GET] /parse/classes/_Role: {
+  "response": {
+    "results": [],
+    "count": 0
+  }
+} results=[], count=0
+[36mverbose[39m: RESPONSE from [GET] /parse/classes/_Role: {
+  "response": {
+    "results": []
+  }
+} results=[]
+[36mverbose[39m: REQUEST for [GET] /parse/schemas: {} method=GET, url=/parse/schemas, host=127.0.0.1:1337, connection=close, content-length=217, accept-encoding=gzip, cf-ipcountry=US, x-forwarded-for=216.228.166.39, cf-ray=487502f01c197a23-SEA, x-forwarded-proto=https, cf-visitor={"scheme":"https"}, accept=*/*, content-type=text/plain, origin=https://cloud.deschutesdesigngroup.com, accept-language=en-us, user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15, referer=https://cloud.deschutesdesigngroup.com/apps/PERSCOM%20Cloud%20Integration/browser/_Role, cookie=session=eyJjc3JmU2VjcmV0IjoiU0tTbkJzTHhoZ29xZmZzWkJNUWo0dE80IiwiZmxhc2giOnt9LCJwYXNzcG9ydCI6eyJ1c2VyIjoiYWRtaW4ifX0=; session.sig=rGVZK8pIQv2TMN7RnBArDsP6tsg; OPTOUTMULTI=0:0%7Cc2:0%7Cc9:0%7Cc11:0; _ga=GA1.2.298767659.1541541079; _gid=GA1.2.386110085.1544376060; _policy=%7B%22restricted_market%22:true,%22tracking_market%22:%22explicit%22%7D; utag_main=v_id:0166e250cb35003dc583cf8983b801077007f06f00c48$_sn:18$_ss:0$_st:1544486556396$ses_id:1544483604584%3Bexp-session$_pn:16%3Bexp-session; expBannerSplit=B; pwinteraction=Thu,%2008%20Nov%202018%2018:27:33%20GMT; visitor=vid=6b17965f-8dbc-5855-83b6-467fe9a66722; __cfduid=d76ba66e9340c4ba797feab89344189351541395198, cf-connecting-ip=216.228.166.39, 
+[36mverbose[39m: REQUEST for [GET] /parse/classes/_Role: {
+  "where": {},
+  "limit": 200,
+  "order": "-createdAt"
+} method=GET, url=/parse/classes/_Role, host=127.0.0.1:1337, connection=close, content-length=261, accept-encoding=gzip, cf-ipcountry=US, x-forwarded-for=216.228.166.39, cf-ray=487502f01c1b7a23-SEA, x-forwarded-proto=https, cf-visitor={"scheme":"https"}, accept=*/*, content-type=text/plain, origin=https://cloud.deschutesdesigngroup.com, accept-language=en-us, user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15, referer=https://cloud.deschutesdesigngroup.com/apps/PERSCOM%20Cloud%20Integration/browser/_Role, cookie=session=eyJjc3JmU2VjcmV0IjoiU0tTbkJzTHhoZ29xZmZzWkJNUWo0dE80IiwiZmxhc2giOnt9LCJwYXNzcG9ydCI6eyJ1c2VyIjoiYWRtaW4ifX0=; session.sig=rGVZK8pIQv2TMN7RnBArDsP6tsg; OPTOUTMULTI=0:0%7Cc2:0%7Cc9:0%7Cc11:0; _ga=GA1.2.298767659.1541541079; _gid=GA1.2.386110085.1544376060; _policy=%7B%22restricted_market%22:true,%22tracking_market%22:%22explicit%22%7D; utag_main=v_id:0166e250cb35003dc583cf8983b801077007f06f00c48$_sn:18$_ss:0$_st:1544486556396$ses_id:1544483604584%3Bexp-session$_pn:16%3Bexp-session; expBannerSplit=B; pwinteraction=Thu,%2008%20Nov%202018%2018:27:33%20GMT; visitor=vid=6b17965f-8dbc-5855-83b6-467fe9a66722; __cfduid=d76ba66e9340c4ba797feab89344189351541395198, cf-connecting-ip=216.228.166.39, , limit=200, order=-createdAt
+[36mverbose[39m: RESPONSE from [GET] /parse/schemas: {
+  "response": {
+    "results": [
+      {
+        "className": "_Role",
+        "fields": {
+          "objectId": {
+            "type": "String"
+          },
+          "createdAt": {
+            "type": "Date"
+          },
+          "updatedAt": {
+            "type": "Date"
+          },
+          "ACL": {
+            "type": "ACL"
+          },
+          "name": {
+            "type": "String"
+          },
+          "users": {
+            "type": "Relation",
+            "targetClass": "_User"
+          },
+          "roles": {
+            "type": "Relation",
+            "targetClass": "_Role"
+          }
+        },
+        "classLevelPermissions": {
+          "find": {
+            "*": true
+          },
+          "get": {
+            "*": true
+          },
+          "create": {
+            "*": true
+          },
+          "update": {
+            "*": true
+          },
+          "delete": {
+            "*": true
+          },
+          "addField": {
+            "*": true
+          }
+        },
+        "indexes": {
+          "_id_": {
+            "_id": 1
+          },
+          "name_1": {
+            "name": 1
+          }
+        }
+      },
+      {
+        "className": "_User",
+        "fields": {
+          "objectId": {
+            "type": "String"
+          },
+          "createdAt": {
+            "type": "Date"
+          },
+          "updatedAt": {
+            "type": "Date"
+          },
+          "ACL": {
+            "type": "ACL"
+          },
+          "username": {
+            "type": "String"
+          },
+          "password": {
+            "type": "String"
+          },
+          "email": {
+            "type": "String"
+          },
+          "emailVerified": {
+            "type": "Boolean"
+          },
+          "authData": {
+            "type": "Object"
+          }
+        },
+        "classLevelPermissions": {
+          "find": {
+            "*": true
+          },
+          "get": {
+            "*": true
+          },
+          "create": {
+            "*": true
+          },
+          "update": {
+            "*": true
+          },
+          "delete": {
+            "*": true
+          },
+          "addField": {
+            "*": true
+          }
+        },
+        "indexes": {
+          "_id_": {
+            "_id": 1
+          },
+          "username_1": {
+            "username": 1
+          },
+          "email_1": {
+            "email": 1
+          }
+        }
+      }
+    ]
+  }
+} results=[className=_Role, type=String, type=Date, type=Date, type=ACL, type=String, type=Relation, targetClass=_User, type=Relation, targetClass=_Role, *=true, *=true, *=true, *=true, *=true, *=true, _id=1, name=1, className=_User, type=String, type=Date, type=Date, type=ACL, type=String, type=String, type=String, type=Boolean, type=Object, $ref=$["result"]["response"]["results"][0]["classLevelPermissions"], _id=1, username=1, email=1]
+[36mverbose[39m: REQUEST for [GET] /parse/schemas: {} method=GET, url=/parse/schemas, host=127.0.0.1:1337, connection=close, content-length=217, accept-encoding=gzip, cf-ipcountry=US, x-forwarded-for=216.228.166.39, cf-ray=487502f01c1a7a23-SEA, x-forwarded-proto=https, cf-visitor={"scheme":"https"}, accept=*/*, content-type=text/plain, origin=https://cloud.deschutesdesigngroup.com, accept-language=en-us, user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15, referer=https://cloud.deschutesdesigngroup.com/apps/PERSCOM%20Cloud%20Integration/browser/_Role, cookie=session=eyJjc3JmU2VjcmV0IjoiU0tTbkJzTHhoZ29xZmZzWkJNUWo0dE80IiwiZmxhc2giOnt9LCJwYXNzcG9ydCI6eyJ1c2VyIjoiYWRtaW4ifX0=; session.sig=rGVZK8pIQv2TMN7RnBArDsP6tsg; OPTOUTMULTI=0:0%7Cc2:0%7Cc9:0%7Cc11:0; _ga=GA1.2.298767659.1541541079; _gid=GA1.2.386110085.1544376060; _policy=%7B%22restricted_market%22:true,%22tracking_market%22:%22explicit%22%7D; utag_main=v_id:0166e250cb35003dc583cf8983b801077007f06f00c48$_sn:18$_ss:0$_st:1544486556396$ses_id:1544483604584%3Bexp-session$_pn:16%3Bexp-session; expBannerSplit=B; pwinteraction=Thu,%2008%20Nov%202018%2018:27:33%20GMT; visitor=vid=6b17965f-8dbc-5855-83b6-467fe9a66722; __cfduid=d76ba66e9340c4ba797feab89344189351541395198, cf-connecting-ip=216.228.166.39, 
+[36mverbose[39m: RESPONSE from [GET] /parse/classes/_Role: {
+  "response": {
+    "results": []
+  }
+} results=[]
+[36mverbose[39m: RESPONSE from [GET] /parse/schemas: {
+  "response": {
+    "results": [
+      {
+        "className": "_Role",
+        "fields": {
+          "objectId": {
+            "type": "String"
+          },
+          "createdAt": {
+            "type": "Date"
+          },
+          "updatedAt": {
+            "type": "Date"
+          },
+          "ACL": {
+            "type": "ACL"
+          },
+          "name": {
+            "type": "String"
+          },
+          "users": {
+            "type": "Relation",
+            "targetClass": "_User"
+          },
+          "roles": {
+            "type": "Relation",
+            "targetClass": "_Role"
+          }
+        },
+        "classLevelPermissions": {
+          "find": {
+            "*": true
+          },
+          "get": {
+            "*": true
+          },
+          "create": {
+            "*": true
+          },
+          "update": {
+            "*": true
+          },
+          "delete": {
+            "*": true
+          },
+          "addField": {
+            "*": true
+          }
+        },
+        "indexes": {
+          "_id_": {
+            "_id": 1
+          },
+          "name_1": {
+            "name": 1
+          }
+        }
+      },
+      {
+        "className": "_User",
+        "fields": {
+          "objectId": {
+            "type": "String"
+          },
+          "createdAt": {
+            "type": "Date"
+          },
+          "updatedAt": {
+            "type": "Date"
+          },
+          "ACL": {
+            "type": "ACL"
+          },
+          "username": {
+            "type": "String"
+          },
+          "password": {
+            "type": "String"
+          },
+          "email": {
+            "type": "String"
+          },
+          "emailVerified": {
+            "type": "Boolean"
+          },
+          "authData": {
+            "type": "Object"
+          }
+        },
+        "classLevelPermissions": {
+          "find": {
+            "*": true
+          },
+          "get": {
+            "*": true
+          },
+          "create": {
+            "*": true
+          },
+          "update": {
+            "*": true
+          },
+          "delete": {
+            "*": true
+          },
+          "addField": {
+            "*": true
+          }
+        },
+        "indexes": {
+          "_id_": {
+            "_id": 1
+          },
+          "username_1": {
+            "username": 1
+          },
+          "email_1": {
+            "email": 1
+          }
+        }
+      }
+    ]
+  }
+} results=[className=_Role, type=String, type=Date, type=Date, type=ACL, type=String, type=Relation, targetClass=_User, type=Relation, targetClass=_Role, *=true, *=true, *=true, *=true, *=true, *=true, _id=1, name=1, className=_User, type=String, type=Date, type=Date, type=ACL, type=String, type=String, type=String, type=Boolean, type=Object, $ref=$["result"]["response"]["results"][0]["classLevelPermissions"], _id=1, username=1, email=1]
+[36mverbose[39m: REQUEST for [GET] /parse/classes/_Role: {
+  "where": {},
+  "limit": 0,
+  "count": 1
+} method=GET, url=/parse/classes/_Role, host=127.0.0.1:1337, connection=close, content-length=248, accept-encoding=gzip, cf-ipcountry=US, x-forwarded-for=216.228.166.39, cf-ray=487502f0acc67a23-SEA, x-forwarded-proto=https, cf-visitor={"scheme":"https"}, accept=*/*, content-type=text/plain, origin=https://cloud.deschutesdesigngroup.com, accept-language=en-us, user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15, referer=https://cloud.deschutesdesigngroup.com/apps/PERSCOM%20Cloud%20Integration/browser/_Role, cookie=session=eyJjc3JmU2VjcmV0IjoiU0tTbkJzTHhoZ29xZmZzWkJNUWo0dE80IiwiZmxhc2giOnt9LCJwYXNzcG9ydCI6eyJ1c2VyIjoiYWRtaW4ifX0=; session.sig=rGVZK8pIQv2TMN7RnBArDsP6tsg; OPTOUTMULTI=0:0%7Cc2:0%7Cc9:0%7Cc11:0; _ga=GA1.2.298767659.1541541079; _gid=GA1.2.386110085.1544376060; _policy=%7B%22restricted_market%22:true,%22tracking_market%22:%22explicit%22%7D; utag_main=v_id:0166e250cb35003dc583cf8983b801077007f06f00c48$_sn:18$_ss:0$_st:1544486556396$ses_id:1544483604584%3Bexp-session$_pn:16%3Bexp-session; expBannerSplit=B; pwinteraction=Thu,%2008%20Nov%202018%2018:27:33%20GMT; visitor=vid=6b17965f-8dbc-5855-83b6-467fe9a66722; __cfduid=d76ba66e9340c4ba797feab89344189351541395198, cf-connecting-ip=216.228.166.39, , limit=0, count=1
+[36mverbose[39m: RESPONSE from [GET] /parse/classes/_Role: {
+  "response": {
+    "results": [],
+    "count": 0
+  }
+} results=[], count=0
+[36mverbose[39m: REQUEST for [GET] /parse/classes/_User: {
+  "where": {},
+  "limit": 0,
+  "count": 1
+} method=GET, url=/parse/classes/_User, host=127.0.0.1:1337, connection=close, content-length=248, accept-encoding=gzip, cf-ipcountry=US, x-forwarded-for=216.228.166.39, cf-ray=487502f0acc47a23-SEA, x-forwarded-proto=https, cf-visitor={"scheme":"https"}, accept=*/*, content-type=text/plain, origin=https://cloud.deschutesdesigngroup.com, accept-language=en-us, user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15, referer=https://cloud.deschutesdesigngroup.com/apps/PERSCOM%20Cloud%20Integration/browser/_Role, cookie=session=eyJjc3JmU2VjcmV0IjoiU0tTbkJzTHhoZ29xZmZzWkJNUWo0dE80IiwiZmxhc2giOnt9LCJwYXNzcG9ydCI6eyJ1c2VyIjoiYWRtaW4ifX0=; session.sig=rGVZK8pIQv2TMN7RnBArDsP6tsg; OPTOUTMULTI=0:0%7Cc2:0%7Cc9:0%7Cc11:0; _ga=GA1.2.298767659.1541541079; _gid=GA1.2.386110085.1544376060; _policy=%7B%22restricted_market%22:true,%22tracking_market%22:%22explicit%22%7D; utag_main=v_id:0166e250cb35003dc583cf8983b801077007f06f00c48$_sn:18$_ss:0$_st:1544486556396$ses_id:1544483604584%3Bexp-session$_pn:16%3Bexp-session; expBannerSplit=B; pwinteraction=Thu,%2008%20Nov%202018%2018:27:33%20GMT; visitor=vid=6b17965f-8dbc-5855-83b6-467fe9a66722; __cfduid=d76ba66e9340c4ba797feab89344189351541395198, cf-connecting-ip=216.228.166.39, , limit=0, count=1
+[36mverbose[39m: REQUEST for [GET] /parse/classes/_User: {
+  "where": {},
+  "limit": 0,
+  "count": 1
+} method=GET, url=/parse/classes/_User, host=127.0.0.1:1337, connection=close, content-length=248, accept-encoding=gzip, cf-ipcountry=US, x-forwarded-for=216.228.166.39, cf-ray=487502f0acc77a23-SEA, x-forwarded-proto=https, cf-visitor={"scheme":"https"}, accept=*/*, content-type=text/plain, origin=https://cloud.deschutesdesigngroup.com, accept-language=en-us, user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15, referer=https://cloud.deschutesdesigngroup.com/apps/PERSCOM%20Cloud%20Integration/browser/_Role, cookie=session=eyJjc3JmU2VjcmV0IjoiU0tTbkJzTHhoZ29xZmZzWkJNUWo0dE80IiwiZmxhc2giOnt9LCJwYXNzcG9ydCI6eyJ1c2VyIjoiYWRtaW4ifX0=; session.sig=rGVZK8pIQv2TMN7RnBArDsP6tsg; OPTOUTMULTI=0:0%7Cc2:0%7Cc9:0%7Cc11:0; _ga=GA1.2.298767659.1541541079; _gid=GA1.2.386110085.1544376060; _policy=%7B%22restricted_market%22:true,%22tracking_market%22:%22explicit%22%7D; utag_main=v_id:0166e250cb35003dc583cf8983b801077007f06f00c48$_sn:18$_ss:0$_st:1544486556396$ses_id:1544483604584%3Bexp-session$_pn:16%3Bexp-session; expBannerSplit=B; pwinteraction=Thu,%2008%20Nov%202018%2018:27:33%20GMT; visitor=vid=6b17965f-8dbc-5855-83b6-467fe9a66722; __cfduid=d76ba66e9340c4ba797feab89344189351541395198, cf-connecting-ip=216.228.166.39, , limit=0, count=1
+[36mverbose[39m: REQUEST for [GET] /parse/classes/_Role: {
+  "where": {},
+  "limit": 0,
+  "count": 1
+} method=GET, url=/parse/classes/_Role, host=127.0.0.1:1337, connection=close, content-length=248, accept-encoding=gzip, cf-ipcountry=US, x-forwarded-for=216.228.166.39, cf-ray=487502f0acc27a23-SEA, x-forwarded-proto=https, cf-visitor={"scheme":"https"}, accept=*/*, content-type=text/plain, origin=https://cloud.deschutesdesigngroup.com, accept-language=en-us, user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.2 Safari/605.1.15, referer=https://cloud.deschutesdesigngroup.com/apps/PERSCOM%20Cloud%20Integration/browser/_Role, cookie=session=eyJjc3JmU2VjcmV0IjoiU0tTbkJzTHhoZ29xZmZzWkJNUWo0dE80IiwiZmxhc2giOnt9LCJwYXNzcG9ydCI6eyJ1c2VyIjoiYWRtaW4ifX0=; session.sig=rGVZK8pIQv2TMN7RnBArDsP6tsg; OPTOUTMULTI=0:0%7Cc2:0%7Cc9:0%7Cc11:0; _ga=GA1.2.298767659.1541541079; _gid=GA1.2.386110085.1544376060; _policy=%7B%22restricted_market%22:true,%22tracking_market%22:%22explicit%22%7D; utag_main=v_id:0166e250cb35003dc583cf8983b801077007f06f00c48$_sn:18$_ss:0$_st:1544486556396$ses_id:1544483604584%3Bexp-session$_pn:16%3Bexp-session; expBannerSplit=B; pwinteraction=Thu,%2008%20Nov%202018%2018:27:33%20GMT; visitor=vid=6b17965f-8dbc-5855-83b6-467fe9a66722; __cfduid=d76ba66e9340c4ba797feab89344189351541395198, cf-connecting-ip=216.228.166.39, , limit=0, count=1
+[36mverbose[39m: RESPONSE from [GET] /parse/classes/_User: {
+  "response": {
+    "results": [],
+    "count": 0
+  }
+} results=[], count=0
+[36mverbose[39m: RESPONSE from [GET] /parse/classes/_User: {
+  "response": {
+    "results": [],
+    "count": 0
+  }
+} results=[], count=0
+[36mverbose[39m: RESPONSE from [GET] /parse/classes/_Role: {
+  "response": {
+    "results": [],
+    "count": 0
+  }
+} results=[], count=0
