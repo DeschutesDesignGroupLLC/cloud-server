@@ -45,8 +45,11 @@ var dashboard = new ParseDashboard({
     cookieSessionSecret: "z0DP7aQ37Wv4gyqXkbtL"
 });
 
-// Prevent insecure connections
-var allowInsecureHTTP = false;
+// Allows insecure connections because SSL is being terminated at AWS ELB
+var allowInsecureHTTP = true;
+
+// Loging
+console.log('icon folder located at ' + __dirname);
 
 // Serve the Parse Dashboard on the /parsedashboard URL prefix
 app.use('/', dashboard);

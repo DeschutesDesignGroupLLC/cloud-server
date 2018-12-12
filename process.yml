@@ -1,6 +1,11 @@
 apps:
-  - script: /opt/deschutesdesigngroup/apps/parse/htdocs/server.js
-    instances: 3
+  - script: server.js
+    name: parse-server
+    instances: max
     exec_mode: cluster
-    watch: true
-    NODE_ENV: production
+    cwd: /opt/deschutesdesigngroup/apps/parse/htdocs
+    autorestart: true
+    env:
+      NODE_ENV: development
+    env_production:
+      NODE_ENV: production
