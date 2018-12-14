@@ -3,7 +3,7 @@ apps:
     name: parse-server
     instances: max
     exec_mode: cluster
-    cwd: /opt/deschutesdesigngroup/apps/parse/htdocs
+    cwd: /htdocs
     autorestart: true
     env:
       NODE_ENV: development
