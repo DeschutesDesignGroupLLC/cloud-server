@@ -3,23 +3,15 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Entered the install phase...
       - npm install pm2 -g && pm2 update
       - yum install nginx -y
   pre_build:
     commands:
-      - echo Entered the pre_build phase...
       - npm ci /opt/deschutesdesigngroup/apps/parse/package.json
   build:
     commands:
-      - echo Entered the build phase...
-      - echo Build started on `date`
-      - sudo service nginx start
+      - service nginx start
       - pm2 start /opt/deschutesdesigngroup/apps/parse/process.yml --env production
-  post_build:
-    commands:
-      - echo Entered the post_build phase...
-      - echo Build completed on `date`
 
 artifacts:
   files:
