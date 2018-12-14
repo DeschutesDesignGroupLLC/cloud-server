@@ -3,6 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
+      - yum update
       - npm install pm2 -g && pm2 update
       - yum install nginx -y
   pre_build:
