@@ -1,0 +1,23 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Entered the install phase...
+      - npm install pm2 -g && pm2 update
+      - sudo yum install nginx -y
+  pre_build:
+    commands:
+      - echo Entered the pre_build phase...
+      - npm ci package.json
+      - sudo cp cloud.deschutesdesigngroup.com.conf /etc/nginx/conf.d/
+  build:
+    commands:
+      - echo Entered the build phase...
+      - echo Build started on `date`
+      - sudo service nginx start
+      - pm2 start process.yml --env production
+  post_build:
+    commands:
+      - echo Entered the post_build phase...
+      - echo Build completed on `date`
