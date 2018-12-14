@@ -3,7 +3,7 @@ apps:
     name: parse-server
     instances: max
     exec_mode: cluster
-    cwd: /htdocs
+    cwd: htdocs
     autorestart: true
     env:
       NODE_ENV: development

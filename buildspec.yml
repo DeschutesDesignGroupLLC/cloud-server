@@ -17,6 +17,10 @@ phases:
     commands:
       - nginx -c nginx.conf
       - pm2 start process.yml --env production
+  post_build:
+    commands:
+      - pm2 show parse-server
+      - pm2 env 0
 
 artifacts:
   files:
