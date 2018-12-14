@@ -1,11 +1,11 @@
 {
-  "name": "dechutesdesigngroupllc-cloud-server",
+  "name": "Deschutes Design Group LLC Cloud Server",
   "version": "1.0.0",
-  "description": "Deschutes Design Group LLC parse server deployment",
+  "description": "A highly-available, scalable web application built on NodeJs, deployed with Amazon Web Services, to provide an API accessible database service. Using Nginx as a reverse proxy, MongoDb as our NoSQL database, our cloud server provides backend services for several of our web and mobile application.",
   "main": "htdocs/server.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DeschutesDesignGroupLLC/parse-server.git"
+    "url": "https://github.com/DeschutesDesignGroupLLC/cloud-server.git"
   },
   "keywords": [
     "parse"
@@ -20,14 +20,14 @@
     "parse-dashboard": "*"
   },
   "bugs": {
-    "url": "https://github.com/DeschutesDesignGroupLLC/parse-server/issues"
+    "url": "https://github.com/DeschutesDesignGroupLLC/cloud-server/issues"
   },
-  "homepage": "https://github.com/DeschutesDesignGroupLLC/parse-server#readme",
+  "homepage": "https://github.com/DeschutesDesignGroupLLC/cloud-server#readme",
   "scripts": {
     "start": "node htdocs/server.js",
     "stop": "killall node"
   },
   "engines": {
-    "node": ">=4.3"
+    "node": ">=8.0"
   }
 }
