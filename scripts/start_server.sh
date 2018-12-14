@@ -1,5 +1,4 @@
 #!/bin/bash
 
 # Starts the parse server
-
-. /opt/deschutesdesigngroup/apps/parse/scripts/ctl.sh start
+pm2 start /opt/deschutesdesigngroup/apps/parse/process.yml --env production

@@ -9,15 +9,19 @@ phases:
   pre_build:
     commands:
       - echo Entered the pre_build phase...
-      - npm ci package.json
-      - sudo cp cloud.deschutesdesigngroup.com.conf /etc/nginx/conf.d/
+      - npm ci /opt/deschutesdesigngroup/apps/parse/package.json
   build:
     commands:
       - echo Entered the build phase...
       - echo Build started on `date`
       - sudo service nginx start
-      - pm2 start process.yml --env production
+      - pm2 start /opt/deschutesdesigngroup/apps/parse/process.yml --env production
   post_build:
     commands:
       - echo Entered the post_build phase...
       - echo Build completed on `date`
+
+artifacts:
+  files:
+    - target/parse-server-1.0-SNAPSHOT.jar
+    - appspec.yml
