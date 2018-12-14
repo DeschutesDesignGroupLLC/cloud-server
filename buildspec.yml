@@ -12,10 +12,10 @@ phases:
   pre_build:
     commands:
       - npm install package.json
-      - cp nginx.conf /usr/share/nginx
+      - cp nginx.conf /etc/nginx/conf.d
   build:
     commands:
-      - nginx -c nginx.conf
+      - nginx
       - pm2 start process.yml --env production
 
 artifacts:
