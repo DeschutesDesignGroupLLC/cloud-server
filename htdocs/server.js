@@ -33,7 +33,7 @@ var dashboard = new ParseDashboard({
             fileKey: "6511737841477fcd3e61eabe231cf8a73ae2a4db",
             production: true,
             serverURL: "https://cloud.deschutesdesigngroup.com/parse",
-	    iconName: "deschutesdesigngroup.jpg"
+	        iconName: "deschutesdesigngroup.jpg"
         }
     ],
     users: [
