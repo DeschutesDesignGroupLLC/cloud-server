@@ -14,7 +14,7 @@ phases:
       - npm ci package.json
   build:
     commands:
-      - service nginx start
+      - nginx -c nginx.conf
       - pm2 start process.yml --env production
 
 artifacts:
