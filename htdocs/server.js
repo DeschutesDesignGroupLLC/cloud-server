@@ -1,20 +1,23 @@
+// Require express
 var express = require('express');
 var ParseServer = require('parse-server').ParseServer;
 var app = express();
-// Specify the connection string for your mongodb database
-// and the location to your Parse cloud code
+
+// Start our parse server using enviroment variables for our config settings
 var api = new ParseServer({
-    databaseURI: "mongodb://parse:Wzk0FiyHL3nN@mongo.deschutesdesigngroup.com:27017/parse-server",
-    cloud: "/opt/deschutesdesigngroup/apps/parse/cloud/cloud.js",
-    appId: "cfe3e2bf2ea8ecaae29c4ebb522cce42160b5e4f",
-    masterKey: "5630adf1afd3fdf6f56c2792307e986856e0ae11",
-    fileKey: "6511737841477fcd3e61eabe231cf8a73ae2a4db",
-    serverURL: "https://cloud.deschutesdesigngroup.com/parse"
+    databaseURI: process.env.PARSE_SERVER_DATABASE_URI,
+    cloud: process.env.PARSE_SERVER_CLOUD,
+    appId: process.env.PARSE_SERVER_APPLICATION_ID,
+    masterKey: process.env.PARSE_SERVER_MASTER_KEY,
+    fileKey: process.env.PARSE_SERVER_FILE_KEY,
+    serverURL: process.env.PARSE_SERVER_URL
 });
+
 // Serve the Parse API on the /parse URL prefix
 app.use('/parse', api);
 
-var port = 1337;
+// Server the server up on port set in enviroment variables
+var port = process.env.PARSE_SERVER_PORT;
 app.listen(port, function() {
     console.log('parse-server running on port ' + port);
 });
@@ -48,13 +51,11 @@ var dashboard = new ParseDashboard({
 // Allows insecure connections because SSL is being terminated at AWS ELB
 var allowInsecureHTTP = true;
 
-// Loging
-console.log('icon folder located at ' + __dirname);
-
 // Serve the Parse Dashboard on the /parsedashboard URL prefix
 app.use('/', dashboard);
 
-var portdash = 4040;
+// Server the dashboard up on the env var port
+var portdash = process.env.PARSE_DASHBOARD_PORT;
 app.listen(portdash, function() {
     console.log('parse-dashboard running on port ' + portdash);
 });

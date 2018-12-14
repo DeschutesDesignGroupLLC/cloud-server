@@ -9,3 +9,11 @@ apps:
       NODE_ENV: development
     env_production:
       NODE_ENV: production
+      PARSE_SERVER_PORT: 1337
+      PARSE_SERVER_APPLICATION_ID: cfe3e2bf2ea8ecaae29c4ebb522cce42160b5e4f
+      PARSE_SERVER_MASTER_KEY: 5630adf1afd3fdf6f56c2792307e986856e0ae11
+      PARSE_SERVER_DATABASE_URI: mongodb://parse:Wzk0FiyHL3nN@mongo.deschutesdesigngroup.com:27017/parse-server
+      PARSE_SERVER_URL: https://cloud.deschutesdesigngroup.com/parse
+      PARSE_SERVER_CLOUD: /opt/deschutesdesigngroup/apps/parse/cloud/cloud.js
+      PARSE_SERVER_FILE_KEY: 6511737841477fcd3e61eabe231cf8a73ae2a4db
+      PARSE_DASHBOARD_PORT: 4040
