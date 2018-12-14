@@ -8,11 +8,11 @@ phases:
       - yum install nginx -y
   pre_build:
     commands:
-      - npm ci /opt/deschutesdesigngroup/apps/parse/package.json
+      - npm ci package.json
   build:
     commands:
       - service nginx start
-      - pm2 start /opt/deschutesdesigngroup/apps/parse/process.yml --env production
+      - pm2 start process.yml --env production
 
 artifacts:
   files:
