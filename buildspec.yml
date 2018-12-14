@@ -20,5 +20,5 @@ phases:
 
 artifacts:
   files:
-    - target/parse-server-1.0-SNAPSHOT.jar
+    - parse-server-1.0-snapshot.jar
     - appspec.yml
