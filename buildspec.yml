@@ -15,7 +15,7 @@ phases:
       - cp nginx.conf /etc/nginx/conf.d
   build:
     commands:
-      - nginx
+      - nginx -g "server_names_hash_bucket_size 128;"
       - pm2 start process.yml --env production
 
 artifacts:
