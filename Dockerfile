@@ -5,6 +5,9 @@ ARG NODE_ENV=production
 
 # Install our dependencies
 RUN yum update -y
+RUN curl --silent --location https://rpm.nodesource.com/setup_10.x | bash -
+RUN yum install nodejs -y --enablerepo=nodesource
+RUN npm install -g npm@latest
 RUN npm install pm2 -g && pm2 update
 
 # Create our working directory and copy our source to it
