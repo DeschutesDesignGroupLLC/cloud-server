@@ -12,6 +12,7 @@ phases:
   pre_build:
     commands:
       - npm install package.json
+      - cp nginx.conf /usr/share/nginx
   build:
     commands:
       - nginx -c nginx.conf
