@@ -12,10 +12,10 @@ phases:
   pre_build:
     commands:
       - npm install package.json
-      - cp nginx.conf /etc/nginx/conf.d
+      - cp nginx.conf /usr/share/nginx
   build:
     commands:
-      - nginx -g "server_names_hash_bucket_size 128;"
+      - nginx -c nginx.conf
       - pm2 start process.yml --env production
 
 artifacts:
