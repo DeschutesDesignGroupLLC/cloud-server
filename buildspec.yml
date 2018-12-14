@@ -11,7 +11,7 @@ phases:
       - n latest
   pre_build:
     commands:
-      - npm ci package.json
+      - npm install package.json
   build:
     commands:
       - nginx -c nginx.conf
