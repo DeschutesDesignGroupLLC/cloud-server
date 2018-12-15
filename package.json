@@ -1,5 +1,5 @@
 {
-  "name": "Deschutes Design Group LLC Cloud Server",
+  "name": "deschutesdesigngroupllc-cloud-server",
   "version": "1.0.0",
   "description": "A highly-available, scalable web application built on NodeJs, deployed with Amazon Web Services, to provide an API accessible database service. Using Nginx as a reverse proxy, MongoDb as our NoSQL database, our cloud server provides backend services for several of our web and mobile application.",
   "main": "htdocs/server.js",
@@ -13,11 +13,11 @@
   "author": "Deschutes Design Group LLC",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.4",
-    "kerberos": "~0.0.x",
-    "parse": "~1.8.0",
-    "parse-server": "*",
-    "parse-dashboard": "*"
+    "express": "4.16.4",
+    "kerberos": "1.1.2",
+    "parse": "2.1.0",
+    "parse-server": "3.1.2",
+    "parse-dashboard": "1.2.0"
   },
   "bugs": {
     "url": "https://github.com/DeschutesDesignGroupLLC/cloud-server/issues"
