@@ -17,7 +17,7 @@ var api = new ParseServer({
 app.use('/parse', api);
 
 // Server the server up on port set in enviroment variables
-var port = PARSE_SERVER_PORT;
+var port = process.env.PARSE_SERVER_PORT;
 app.listen(port, function() {
     console.log('parse-server running on port ' + port);
 });
