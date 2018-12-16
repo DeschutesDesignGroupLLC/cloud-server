@@ -17,7 +17,7 @@ var api = new ParseServer({
 app.use('/parse', api);
 
 // Server the server up on port set in enviroment variables
-var port = 8081;
+var port = PARSE_SERVER_PORT;
 app.listen(port, function() {
     console.log('parse-server running on port ' + port);
 });
@@ -28,11 +28,11 @@ var dashboard = new ParseDashboard({
     apps: [
         {
             appName: "PERSCOM Cloud Integration",
-            appId: "cfe3e2bf2ea8ecaae29c4ebb522cce42160b5e4f",
-            masterKey: "5630adf1afd3fdf6f56c2792307e986856e0ae11",
-            fileKey: "6511737841477fcd3e61eabe231cf8a73ae2a4db",
-            production: true,
-            serverURL: "https://cloud.deschutesdesigngroup.com/parse",
+            appId: process.env.PARSE_SERVER_APPLICATION_ID,
+            masterKey: process.env.PARSE_SERVER_MASTER_KEY,
+            fileKey: process.env.PARSE_SERVER_FILE_KEY,
+            production: process.env.PARSE_SERVER_PRODUCTION,
+            serverURL: process.env.PARSE_SERVER_URL,
 	        iconName: "deschutesdesigngroup.jpg"
         }
     ],
