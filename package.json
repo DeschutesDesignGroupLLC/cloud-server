@@ -24,8 +24,7 @@
   },
   "homepage": "https://github.com/DeschutesDesignGroupLLC/cloud-server#readme",
   "scripts": {
-    "start": "node htdocs/server.js",
-    "stop": "killall node"
+    "start": "node app.js"
   },
   "engines": {
     "node": ">=8.0"
