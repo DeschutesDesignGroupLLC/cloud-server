@@ -1,6 +1,6 @@
 // Require express
 var express = require('express');
-var ParseServer = require('parse-server').ParseServer;
+var ParseServer = require('server').ParseServer;
 var app = express();
 
 // Start our parse server using enviroment variables for our config settings
