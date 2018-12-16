@@ -1,6 +1,6 @@
 // Require express
 var express = require('express');
-var ParseServer = require('server').ParseServer;
+var ParseServer = require('app').ParseServer;
 var app = express();
 
 // Start our parse server using enviroment variables for our config settings
@@ -17,7 +17,7 @@ var api = new ParseServer({
 app.use('/parse', api);
 
 // Server the server up on port set in enviroment variables
-var port = process.env.PARSE_SERVER_PORT;
+var port = 8081;
 app.listen(port, function() {
     console.log('parse-server running on port ' + port);
 });

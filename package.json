@@ -2,7 +2,7 @@
   "name": "deschutesdesigngroupllc-cloud-server",
   "version": "1.0.0",
   "description": "A highly-available, scalable web application built on NodeJs, deployed with Amazon Web Services, to provide an API accessible database service. Using Nginx as a reverse proxy, MongoDb as our NoSQL database, our cloud server provides backend services for several of our web and mobile application.",
-  "main": "server.js",
+  "main": "app.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/DeschutesDesignGroupLLC/cloud-server.git"
