@@ -1,29 +1,10 @@
 version: 0.2
 
-env:
-  variables:
-    PORT: "1337"
-    NODE_ENV: "production"
-    PARSE_SERVER_APPLICATION_ID: "myappid"
-    PARSE_SERVER_MASTER_KEY: "mymasterkey"
-    PARSE_SERVER_FILE_KEY: "myserverfilekey"
-    PARSE_SERVER_DATABASE_URI: "mongodb://localhost:27017/dev"
-    PARSE_SERVER_URL: "http://localhost:1337/parse"
-    PARSE_SERVER_CLOUD: "cloud/cloud.js"
-    PARSE_DASHBOARD_PORT: "4040"
-
 phases:
-  pre_build:
-    commands:
-      - echo Installing dependencies..
-      - npm install
   build:
     commands:
       - echo Build started on `date`
-      - node app.js
-  post_build:
-    commands:
-      - echo Build completed on `date`
+      - npm install
 artifacts:
   files:
     - app.js
