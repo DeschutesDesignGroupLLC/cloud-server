@@ -12,3 +12,4 @@ artifacts:
     - package.json
     - public/*
     - cloud/*
+    - .ebextensions/*.config
