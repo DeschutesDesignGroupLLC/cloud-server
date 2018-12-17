@@ -11,7 +11,7 @@ if (!perscomUri) {
 
 // Start our parse server for PERSCOM
 var perscom = new ParseServer({
-    databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
+    databaseURI: perscomUri || 'mongodb://localhost:27017/dev',
     cloud: process.env.PERSCOM_CLOUD || __dirname + '/cloud/cloud.js',
     appId: process.env.PERSCOM_APP_ID,
     masterKey: process.env.PERSCOM_MASTER_KEY,
