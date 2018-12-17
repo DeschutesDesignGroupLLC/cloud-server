@@ -15,6 +15,6 @@ apps:
       PARSE_SERVER_MASTER_KEY: 5630adf1afd3fdf6f56c2792307e986856e0ae11
       PARSE_SERVER_FILE_KEY: 6511737841477fcd3e61eabe231cf8a73ae2a4db
       PARSE_SERVER_DATABASE_URI: mongodb://localhost:27017/dev
-      PARSE_SERVER_URL: http://localhost/parse
+      PARSE_SERVER_URL: http://localhost:1337/parse
       PARSE_SERVER_CLOUD: cloud/cloud.js
       PARSE_DASHBOARD_PORT: 4040
