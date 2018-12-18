@@ -1,6 +1,6 @@
 # Deschutes Design Group LLC Cloud Server
 
-![Build Status](https://codebuild.us-west-2.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoibGYxRmpQeGlnVVREU1VpdndwWE1DOW1PT3pPUWhJeWJHbmRsdlRPRG1EZEs2UUhJV1paVnNhcDdGUkh2OUFOVHpOYUsvVkJoanVOTVR4U2ZEREl6SkI0PSIsIml2UGFyYW1ldGVyU3BlYyI6IkpGb3ozRG5SQ3pnNFpzRlUiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
+![Build Status](https://codebuild.us-west-2.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoidGR5T3JCV2xnSlVjdW56MHJZTy9aL2luMmNYelpoWlRKdWw0OHJ2ZFdEU0pVM1lEcWROQ252OTVVdnhQZk1JVVAwdlMzMS9Lc1hOS09BS3Q3K21SSG4wPSIsIml2UGFyYW1ldGVyU3BlYyI6ImxlMWM1RHV2Y0ZhdzBBeGEiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
 [![Node version](https://img.shields.io/node/v/parse-server.svg?style=flat)](http://nodejs.org/download/)
 [![npm version](https://badge.fury.io/js/parse-server.svg)](https://badge.fury.io/js/express)
 
