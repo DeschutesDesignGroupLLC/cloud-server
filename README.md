@@ -14,19 +14,19 @@ A highly-available, scalable web application built on NodeJs, deployed with Amaz
 
 The docker container image can be built using the following command.
 
-<code>docker build -t parse-server .</code>
+<code>docker build -t cloud-server .</code>
 
 #### Running
 
-<code>docker run -d --name parse-server -p 80:1337 parse-server</code>
+<code>docker run -d --name cloud-server -p 80:1337 cloud-server</code>
 
 #### Stopping
 
-<code>docker stop parse-server</code>
+<code>docker stop cloud-server</code>
 
 #### Inspecting NodeJs Runtime
 
-<code>docker exec -it parse-server pm2 show parse-server</code>
+<code>docker exec -it cloud-server pm2 show cloud-server</code>
 
 #### Removing a container
 
